@@ -6,6 +6,7 @@ import Recipes from './pages/Recipes';
 import Process from './pages/Process';
 import Shop from './pages/Shop';
 import { motion, AnimatePresence } from 'motion/react';
+import { I18nProvider } from './i18n';
 
 function AnimatedRoutes() {
   return (
@@ -38,18 +39,20 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-background">
-        <Header />
-        <main className="flex-grow">
-          <AnimatedRoutes />
-        </main>
-        <Footer />
-        
-        {/* Load Google Material Icons */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-      </div>
-    </BrowserRouter>
+    <I18nProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <div className="flex flex-col min-h-screen bg-background">
+          <Header />
+          <main className="flex-grow">
+            <AnimatedRoutes />
+          </main>
+          <Footer />
+          
+          {/* Load Google Material Icons */}
+          <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        </div>
+      </BrowserRouter>
+    </I18nProvider>
   );
 }
