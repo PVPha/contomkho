@@ -14,7 +14,7 @@ const STORAGE_KEY = "tom-kho-language";
 export const translations = {
   en: {
     common: {
-      brand: "Tôm Khô Heritage",
+      brand: "Tôm Khô Năm Thuý",
       languageLabel: "Language",
       switchLanguage: "Switch language",
       currentLanguage: "EN",
@@ -45,7 +45,7 @@ export const translations = {
       email: "Email Address",
       subscribe: "SUBSCRIBE",
       copyright:
-        "© 2024 Tôm Khô Heritage. Crafted with tradition, curated for the modern palate.",
+        "© 2026 Tôm Khô Năm Thuý. Crafted with tradition, curated for the modern palate.",
     },
     home: {
       heroAlt: "Premium sun-dried shrimp",
@@ -71,15 +71,15 @@ export const translations = {
         "The sun is our most patient craftsman, drawing out flavors that time and fire cannot.",
       signatureEyebrow: "THE SIGNATURE SELECTION",
       signatureTitle: "Bạc Liêu Sun-Dried",
-      productAlt: "Premium Dried Shrimp",
+      productAlt: "Tôm Khô Năm Thuý",
       limitedReserve: "LIMITED RESERVE",
       tags: ["SUN-DRIED", "EXTRA LARGE GRADE", "NATURALLY SWEET"],
-      productTitle: "Premium Dried Shrimp",
+      productTitle: "Tôm Khô Năm Thuý",
       productTitleAccent: "Net Weight: 500g",
       productDesc:
         "Our premier grade, hand-selected for size and color uniformity. Each shrimp is peeled by hand to preserve the delicate structure of the meat.",
       orderNow: "ORDER NOW",
-      shipping: "Complimentary shipping on orders over $150",
+      shipping: "Complimentary shipping on orders over 300k",
       trustTitle: "Purity & Trust",
       trustItems: [
         {
@@ -98,13 +98,13 @@ export const translations = {
           name: "ELIZA VAN DER BELT",
           role: "MICHELIN STAR PASTRY CHEF",
           quote:
-            "I've tried many brands, but the texture of Tôm Khô Heritage is incomparable. It's like a concentrated bite of the ocean.",
+            "I've tried many brands, but the texture of Tôm Khô Năm Thuý is incomparable. It's like a concentrated bite of the ocean.",
         },
         {
           name: "DAVID NGUYEN",
           role: "HOME CONNOISSEUR",
           quote:
-            "A true gourmet discovery. The amber color and clarity are signs of perfect sun-drying. Simply stunning in my XO sauce.",
+            "A true gourmet discovery. The amber color and clarity are signs of perfect sun-drying.",
         },
       ],
     },
@@ -246,7 +246,7 @@ export const translations = {
       products: [
         {
           id: 1,
-          name: "Heritage Selection 500g",
+          name: "Tôm khô Năm Thuý 500g",
           price: 85.0,
           oldPrice: 110.0,
           tag: "SIGNATURE",
@@ -255,7 +255,7 @@ export const translations = {
         },
         {
           id: 2,
-          name: "Coastal Blend 250g",
+          name: "Tôm Khô Năm Thuý 250g",
           price: 45.0,
           tag: "POPULAR",
           imgKey: "PROCESS_MACRO",
@@ -270,7 +270,7 @@ export const translations = {
         },
         {
           id: 4,
-          name: "Reserve Giant Grade 1kg",
+          name: "Tôm Khô Năm Thuý 1kg",
           price: 160.0,
           tag: "LIMITED",
           imgKey: "HOME_HERO",
@@ -298,7 +298,7 @@ export const translations = {
   },
   vi: {
     common: {
-      brand: "Tôm Khô Heritage",
+      brand: "Tôm Khô Năm Thuý",
       languageLabel: "Ngôn ngữ",
       switchLanguage: "Đổi ngôn ngữ",
       currentLanguage: "VI",
@@ -324,7 +324,7 @@ export const translations = {
       email: "Địa chỉ email",
       subscribe: "ĐĂNG KÝ",
       copyright:
-        "© 2024 Tôm Khô Heritage. Chế tác bằng truyền thống, tuyển chọn cho khẩu vị hiện đại.",
+        "© 2026 Tôm Khô Năm Thuý. Chế tác bằng truyền thống, tuyển chọn cho khẩu vị hiện đại.",
     },
     home: {
       heroAlt: "Tôm khô thượng hạng phơi nắng",
@@ -350,7 +350,7 @@ export const translations = {
         "Mặt trời là người thợ kiên nhẫn nhất, đánh thức những tầng vị mà thời gian và lửa không thể tạo ra.",
       signatureEyebrow: "DÒNG SẢN PHẨM ĐẶC TRƯNG",
       signatureTitle: "Tôm khô Bạc Liêu",
-      productAlt: "Dòng Heritage Selection mùa 2024",
+      productAlt: "Dòng Tôm khô Năm Thuý mùa 2026",
       limitedReserve: "PHIÊN BẢN GIỚI HẠN",
       tags: ["PHƠI NẮNG", "CỠ LỚN ĐẶC BIỆT", "NGỌT TỰ NHIÊN"],
       productTitle: "Tôm khô loại 1",
@@ -358,7 +358,7 @@ export const translations = {
       productDesc:
         "Dòng cao cấp nhất, tuyển chọn thủ công theo kích cỡ và màu sắc đồng đều. Từng con tôm được bóc vỏ bằng tay để giữ trọn cấu trúc thịt tinh tế.",
       orderNow: "ĐẶT HÀNG",
-      shipping: "Miễn phí vận chuyển cho đơn hàng trên $150",
+      shipping: "Miễn phí vận chuyển cho đơn hàng trên 300k",
       trustTitle: "Tinh khiết & Tin cậy",
       trustItems: [
         {
@@ -377,13 +377,13 @@ export const translations = {
           name: "ELIZA VAN DER BELT",
           role: "BẾP TRƯỞNG BÁNH NGỌT SAO MICHELIN",
           quote:
-            "Tôi đã thử nhiều thương hiệu, nhưng kết cấu của Tôm Khô Heritage thật sự khác biệt. Nó như một miếng biển cả được cô đặc.",
+            "Tôi đã thử nhiều thương hiệu, nhưng kết cấu của Tôm Khô Năm Thuý thật sự khác biệt. Nó như một miếng biển cả được cô đặc.",
         },
         {
           name: "DAVID NGUYEN",
           role: "NGƯỜI SÀNH ĂN TẠI GIA",
           quote:
-            "Một khám phá ẩm thực đúng nghĩa. Màu hổ phách và độ trong là dấu hiệu của mẻ phơi nắng hoàn hảo. Tuyệt vời trong sốt XO của tôi.",
+            "Một khám phá ẩm thực đúng nghĩa. Màu hổ phách và độ trong là dấu hiệu của mẻ phơi nắng hoàn hảo.",
         },
       ],
     },
@@ -480,7 +480,7 @@ export const translations = {
         },
         {
           title: "Gỏi tôm khô Bạc Liêu",
-          desc: "Rau giòn trộn cùng tôm khô Heritage đã ngâm mềm và nước sốt tắc tươi sáng.",
+          desc: "Rau giòn trộn cùng Tôm Khô Năm Thuý đã ngâm mềm và nước sốt tắc tươi sáng.",
           time: "20 PHÚT",
           level: "DỄ",
           imgKey: "RECIPE_SALAD",
@@ -518,13 +518,13 @@ export const translations = {
     },
     shop: {
       eyebrow: "BỘ SƯU TẬP",
-      title: "Mua tôm khô Heritage",
-      addToCart: "THÊM VÀO GIỎ",
+      title: "Mua Tôm Khô Năm Thuý",
+      addToCart: "ĐẶT HÀNG",
       categories: ["Tất cả", "Cỡ lớn", "Cỡ vừa", "Đặc sản"],
       products: [
         {
           id: 1,
-          name: "Heritage Selection 500g",
+          name: "Tôm Khô Năm Thuý 500g",
           price: 85.0,
           oldPrice: 110.0,
           tag: "ĐẶC TRƯNG",
@@ -533,7 +533,7 @@ export const translations = {
         },
         {
           id: 2,
-          name: "Coastal Blend 250g",
+          name: "Tôm Khô Năm Thuý 250g",
           price: 45.0,
           tag: "ĐƯỢC ƯA CHUỘNG",
           imgKey: "PROCESS_MACRO",
@@ -548,7 +548,7 @@ export const translations = {
         },
         {
           id: 4,
-          name: "Reserve Giant Grade 1kg",
+          name: "Tôm Khô Năm Thuý 1kg",
           price: 160.0,
           tag: "GIỚI HẠN",
           imgKey: "HOME_HERO",

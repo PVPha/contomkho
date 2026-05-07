@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
-import Icon from './Icon';
-import { useI18n } from '../i18n';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "motion/react";
+import Icon from "./Icon";
+import { useI18n } from "../i18n";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,16 +10,19 @@ export default function Header() {
   const { t, toggleLanguage } = useI18n();
 
   const navLinks = [
-    { name: t.nav.story, path: '/' },
-    { name: t.nav.process, path: '/process' },
-    { name: t.nav.shop, path: '/shop' },
-    { name: t.nav.recipes, path: '/recipes' },
+    { name: t.nav.story, path: "/" },
+    { name: t.nav.process, path: "/process" },
+    { name: t.nav.shop, path: "/shop" },
+    { name: t.nav.recipes, path: "/recipes" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F2ED]/95 backdrop-blur-sm border-b border-primary/10">
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-serif italic text-primary font-bold">
+        <Link
+          to="/"
+          className="text-2xl font-serif italic text-primary font-bold"
+        >
           {t.common.brand}
         </Link>
 
@@ -30,7 +33,9 @@ export default function Header() {
               key={link.name}
               to={link.path}
               className={`font-serif text-sm font-medium transition-all duration-300 hover:text-primary ${
-                location.pathname === link.path ? 'text-primary border-b border-primary' : 'text-on-surface/70'
+                location.pathname === link.path
+                  ? "text-primary border-b border-primary"
+                  : "text-on-surface/70"
               }`}
             >
               {link.name}
@@ -39,7 +44,7 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button
+          {/* <button
             className="text-on-surface hover:text-primary transition-colors flex items-center"
             aria-label={t.nav.cart}
           >
@@ -50,7 +55,7 @@ export default function Header() {
             aria-label={t.nav.account}
           >
             <Icon name="person" size={22} />
-          </button>
+          </button> */}
           <button
             className="border border-outline-variant px-3 py-1 text-[11px] font-bold text-on-surface hover:border-primary hover:text-primary transition-colors"
             onClick={toggleLanguage}
@@ -59,7 +64,7 @@ export default function Header() {
           >
             {t.common.currentLanguage}
           </button>
-          <button 
+          <button
             className="md:hidden text-on-surface flex items-center"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? t.nav.closeMenu : t.nav.menu}
@@ -84,7 +89,9 @@ export default function Header() {
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
                 className={`font-serif text-lg ${
-                  location.pathname === link.path ? 'text-primary' : 'text-on-surface/70'
+                  location.pathname === link.path
+                    ? "text-primary"
+                    : "text-on-surface/70"
                 }`}
               >
                 {link.name}
@@ -104,18 +111,25 @@ export function Footer() {
     <footer className="bg-surface-container-low border-t border-outline-variant/30 py-20 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-6">
-          <div className="text-xl font-bold text-primary font-serif italic">{t.common.brand}</div>
+          <div className="text-xl font-bold text-primary font-serif italic">
+            {t.common.brand}
+          </div>
           <p className="font-serif text-sm leading-relaxed text-on-surface-variant italic">
             {t.footer.tagline}
           </p>
         </div>
 
         <div className="space-y-6">
-          <h5 className="font-label-caps text-on-surface/50">{t.footer.experience}</h5>
+          <h5 className="font-label-caps text-on-surface/50">
+            {t.footer.experience}
+          </h5>
           <ul className="space-y-3 font-serif text-sm">
             {t.footer.links.map((link) => (
               <li key={link}>
-                <a href="#" className="text-on-surface-variant hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-on-surface-variant hover:text-primary transition-colors"
+                >
                   {link}
                 </a>
               </li>
@@ -124,25 +138,38 @@ export function Footer() {
         </div>
 
         <div className="space-y-6">
-          <h5 className="font-label-caps text-on-surface/50">{t.footer.follow}</h5>
+          <h5 className="font-label-caps text-on-surface/50">
+            {t.footer.follow}
+          </h5>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all"
+            >
               <Icon name="language" size={20} />
             </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all"
+            >
               <Icon name="photo_camera" size={20} />
             </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-full text-on-surface-variant hover:border-primary hover:text-primary transition-all"
+            >
               <Icon name="smart_display" size={20} />
             </a>
           </div>
         </div>
 
         <div className="space-y-6">
-          <h5 className="font-label-caps text-on-surface/50">{t.footer.newsletter}</h5>
+          <h5 className="font-label-caps text-on-surface/50">
+            {t.footer.newsletter}
+          </h5>
           <form className="flex flex-col gap-4">
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder={t.footer.email}
               className="bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-2 text-sm font-serif italic transition-all outline-none"
             />

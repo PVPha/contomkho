@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { IMAGES } from '../constants';
-import Icon from '../components/Icon';
-import { useI18n } from '../i18n';
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { IMAGES } from "../constants";
+import Icon from "../components/Icon";
+import { useI18n } from "../i18n";
 
 export default function Shop() {
   const { t } = useI18n();
@@ -11,16 +11,21 @@ export default function Shop() {
   const products = t.shop.products;
   const activeCategory = categories[activeCategoryIndex];
 
-  const filteredProducts = activeCategoryIndex === 0
-    ? products
-    : products.filter(p => p.category === activeCategory);
+  const filteredProducts =
+    activeCategoryIndex === 0
+      ? products.filter((p) => p.id !== 3)
+      : products.filter((p) => p.category === activeCategory && p.id !== 3);
 
   return (
     <div className="pt-20">
       <header className="bg-surface-container py-20 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto text-center">
-          <span className="font-label-caps text-primary mb-4 block">{t.shop.eyebrow}</span>
-          <h1 className="text-5xl lg:text-6xl font-serif italic">{t.shop.title}</h1>
+          <span className="font-label-caps text-primary mb-4 block">
+            {t.shop.eyebrow}
+          </span>
+          <h1 className="text-5xl lg:text-6xl font-serif italic">
+            {t.shop.title}
+          </h1>
         </div>
       </header>
 
@@ -28,12 +33,12 @@ export default function Shop() {
         {/* Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
           {categories.map((cat, index) => (
-            <button 
+            <button
               key={cat}
               onClick={() => setActiveCategoryIndex(index)}
               className={`px-8 py-2 rounded-full font-label-caps text-[10px] transition-all border ${
                 activeCategoryIndex === index
-                  ? "bg-primary text-white border-primary" 
+                  ? "bg-primary text-white border-primary"
                   : "bg-transparent text-on-surface-variant border-outline-variant hover:border-primary"
               }`}
             >
@@ -56,14 +61,16 @@ export default function Shop() {
                 className="group"
               >
                 <div className="relative aspect-square overflow-hidden bg-surface-container mb-6 group-hover:shadow-xl transition-all duration-500">
-                  <img 
+                  <img
                     src={IMAGES[product.imgKey as keyof typeof IMAGES]}
-                    alt={product.name} 
+                    alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {product.tag && (
                     <div className="absolute top-4 left-4">
-                      <span className="bg-white/90 backdrop-blur px-3 py-1 font-label-caps text-[8px] text-primary tracking-widest">{product.tag}</span>
+                      <span className="bg-white/90 backdrop-blur px-3 py-1 font-label-caps text-[8px] text-primary tracking-widest">
+                        {product.tag}
+                      </span>
                     </div>
                   )}
                   <button className="absolute bottom-4 left-4 right-4 bg-primary text-white py-3 font-label-caps text-[10px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
@@ -72,13 +79,19 @@ export default function Shop() {
                 </div>
                 <div className="space-y-1">
                   <h3 className="font-serif text-lg">{product.name}</h3>
-                  <p className="text-xs text-on-surface-variant/60 font-serif italic mb-2">{product.category}</p>
-                  <div className="flex items-center gap-3">
-                    <span className="text-primary font-bold">${product.price.toFixed(2)}</span>
+                  <p className="text-xs text-on-surface-variant/60 font-serif italic mb-2">
+                    {product.category}
+                  </p>
+                  {/* <div className="flex items-center gap-3">
+                    <span className="text-primary font-bold">
+                      ${product.price.toFixed(2)}
+                    </span>
                     {product.oldPrice && (
-                      <span className="text-on-surface-variant/40 line-through text-xs font-serif">${product.oldPrice.toFixed(2)}</span>
+                      <span className="text-on-surface-variant/40 line-through text-xs font-serif">
+                        ${product.oldPrice.toFixed(2)}
+                      </span>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))}
@@ -92,8 +105,12 @@ export default function Shop() {
           {t.shop.badges.map((badge) => (
             <div key={badge.title}>
               <Icon name={badge.icon} size={32} className="text-primary mb-4" />
-              <h4 className="font-label-caps text-[12px] mb-2">{badge.title}</h4>
-              <p className="text-xs text-on-surface-variant italic font-serif">{badge.desc}</p>
+              <h4 className="font-label-caps text-[12px] mb-2">
+                {badge.title}
+              </h4>
+              <p className="text-xs text-on-surface-variant italic font-serif">
+                {badge.desc}
+              </p>
             </div>
           ))}
         </div>

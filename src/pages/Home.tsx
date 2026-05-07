@@ -152,14 +152,14 @@ export default function Home() {
               <p className="text-lg text-on-surface-variant font-serif opacity-80">
                 {t.home.productDesc}
               </p>
-              <div className="flex items-baseline gap-4 py-4">
+              {/* <div className="flex items-baseline gap-4 py-4">
                 <span className="text-3xl font-serif text-primary">$85.00</span>
                 <span className="text-on-surface-variant/50 line-through text-sm">
                   $110.00
                 </span>
-              </div>
+              </div> */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <div className="flex items-center border border-outline px-6 py-4">
+                {/* <div className="flex items-center border border-outline px-6 py-4">
                   <button className="hover:text-primary">
                     <Icon name="remove" size={18} />
                   </button>
@@ -172,7 +172,7 @@ export default function Home() {
                   <button className="hover:text-primary">
                     <Icon name="add" size={18} />
                   </button>
-                </div>
+                </div> */}
                 <button className="bg-primary text-white flex-1 py-4 font-label-caps hover:bg-primary-container transition-all shadow-lg inline-flex items-center justify-center gap-2">
                   {t.home.orderNow} <Icon name="arrow_forward" size={18} />
                 </button>
@@ -235,14 +235,14 @@ export default function Home() {
                   <p className="font-serif italic text-on-surface/80 mb-8 leading-relaxed">
                     "{test.quote}"
                   </p>
-                  <div>
+                  {/* <div>
                     <p className="font-bold text-xs tracking-widest text-primary">
                       {test.name}
                     </p>
                     <p className="text-[10px] text-on-surface-variant/60 uppercase">
                       {test.role}
                     </p>
-                  </div>
+                  </div> */}
                 </motion.div>
               ))}
             </div>
