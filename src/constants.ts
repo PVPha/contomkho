@@ -14,18 +14,20 @@ import PROCESS_WIDE from '../src/assets/images/PROCESS_WIDE.png'
 import PROCESS_MACRO from '../src/assets/images/PROCESS_MACRO.png'
 import PROCESS_WORKER from '../src/assets/images/PROCESS_WORKER.png'
 import PROCESS_PEELING from '../src/assets/images/PROCESS_PEELING.png'
+import RECIPE_SOUP from '../src/assets/images/RECIPE_SOUP.png'
+import RECIPE_KIEU from '../src/assets/images/RECIPE_KIEU.png'
+import RECIPE_FRIEDRICE from '../src/assets/images/RECIPE_FRIEDRICE.png'
+
 export const IMAGES = {
   HOME_HERO: HOME_HERO,
-  //"https://lh3.googleusercontent.com/aida-public/AB6AXuCyyCtkI7xQcl2oYol8BkVxMutGehJpxquu2liy8Ykj5e__Fypjp8JXrK_N84i2dPUuQlGq1uT6uTjojVam7-FMzHV3aQU0Fnr3_eNNCssah13lALmGmKwmOiNv-aw2yoQ_BQHbeYtWL4R8NTrlpwY-Dh0hN1C50GlQAOGzySJpA9BT32JyjCor8Cavhho_GQPd6valx9UvydPwxJsd5KIxYWxKOjQEBYg0KYFby6-GhHhv2r3brzKTLvcNiRj1Z5jxDCfryZVc6dUF",
   HOME_STORY: HOME_STORY,
-  //"https://lh3.googleusercontent.com/aida-public/AB6AXuDVXuoGkjrucBetcLrHEPU8kV1_n6efRypRzRLcK0Vs3sva-AtYyScbh8BpHu9HP6de9crLbOER0ydV6yHtc66x8xkPaSkWJtd9wxBX0pmTCv4h95417jDvbtu-B5sbrjl4b8NbCVminOhO7jvfWwEztnEWa2cxwQJ-7JnX7qxV6wL9TU18sg1kLHo2YYPyQUodJJGFNrSRXsaV9tOS0FhYuD80o3CIP1vC1B0QQqJaCNNSWwuxxYzvixvXopUBihd10O_GEA9TATQV",
   HOME_PRODUCT: HOME_PRODUCT,
-  //"https://lh3.googleusercontent.com/aida-public/AB6AXuAxblj7mp6bj26jXm-imzmt5_pOSfhxLcuYmRbh6_JEeCjW16WV10ITLG4vCidGk2QUxmoWPnWCwHqL-rS4oDBw4bla7UF4jIArHdbwryFpZS1TUibegZE11ZiOHDoRp1HYEpoxJeLrbYpXUw9E958_8iOwMdpXyO7boLveM6fCAd4pOnRfVKqka44kl_JGeH8hCxDrF_0NI5fBIYGseXX26PatSk6eE_rfFFftlXcJZN4Lg5s43anD9DSaq58smeYfzUjyvY4Oq45k",
   RECIPE_XO: RECIPE_XO,
-  //"https://lh3.googleusercontent.com/aida-public/AB6AXuCfLHySEka_z0S49Yr6hvgqG1iotmTWEGcnNXz6Symfq094Q1KqJ-qD3Sk8TfDCmDcWzu3eYcJGV8xuCEijxN3A18m7kxlV1N1l5Crof9y-84I6t944DH-k6McI2sX-gB6_JRQSLRBG1ifBGdlPuW44H1JWVl4IC4CTsBZSZ2iDxX922PkkpOxPnWcuh2cmrOxaNJ-cdtlHYLEBetv2USOOUoZ6uthKz-z5-L3wN0xYhMj8ZnUZJdsEZG0GL89lV56rnGgjX4_-rouV",
   RECIPE_SALAD: RECIPE_SALAD,
-  //"https://lh3.googleusercontent.com/aida-public/AB6AXuC2i1jdSH4Zav0IBn-lR-NX11Swm0G4Xn7YXFXAA1ewu-mhQ4tX2yjmGTYDF8xX_h6DZhp6SJcvjSwu3s6wQkypNLUMDGmLGbTgUA8bODdzAWcFxLqYzUiMyrPbM-vKZH-70jQLaotSEzcgP5A5O66kzr-JTRXxrOYyRFOR2WtoJn-unb3PkO1Idj45sWReR-D_xRzP8C8W1qUZ1IdjW58kH-slmJgKOyUKljbX0mu7fuVw-honrypHHH8Ku-MzLor2VGvbZEX-Bcq_",
   RECIPE_CLAYPOT: RECIPE_CLAYPOT,
+  RECIPE_SOUP: RECIPE_SOUP,
+  RECIPE_KIEU: RECIPE_KIEU,
+  RECIPE_FRIEDRICE: RECIPE_FRIEDRICE,
   //"https://lh3.googleusercontent.com/aida-public/AB6AXuCG1i-qBOYfRUTE_SGJRsE4sGUG0qBFGx5FWxDaavVhtVU6KKCXbxiV4zF_ACED0ptZPG2eJWf8RQYBjGTziyTGlGAqUIKB9jQlhPXBWIm3ahZY12l_E0ZKuaJaB9luzJ1qd6p2xqAvAkSxzZpwWVVn7MHVv51rZ_6GEUVJu2WqCB_weRarTBBJTV908QJhA0TfkKrzdhcMR9mPBlYpSPIKcxTX6Zgv0SWRnBql79iGyk8yUMp6UqMv5mvqv4ajYhLCuUICL1fyVx7r",
   PROCESS_SECRET: PROCESS_SECRET,
   //"https://lh3.googleusercontent.com/aida-public/AB6AXuAsHL1pvDqC69epEJSaTAcUPj4WRXgbHEKMJo4LgMj5TfJ5gB7rpco53UN-HhWRaY4iiApwy93U5TSKKINA7IYRpDFzsrxY3lx7B7qkLgMWbby1x2wadVCFi3GPVLdUtgC1ul8eQtHsgXro9W6vygg8SQ8GgxDcLzR0b2WjKnxdYwQrhDbsirRYIBFXT7QMpRdfV9yVl4CP6UnB2dAun1TIso58DNkrvJ7QIlwrbcvSOIyQrejSgBaKyEYcyaw4APV8Hrf3tRK-Xpx0",

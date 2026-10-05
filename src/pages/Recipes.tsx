@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { IMAGES } from '../constants';
 import Icon from '../components/Icon';
@@ -23,38 +24,40 @@ export default function Recipes() {
         <div className="grid grid-cols-12 gap-6 lg:gap-8">
           {recipes.map((recipe, i) => (
             <motion.article 
-              key={i}
+              key={recipe.id || i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className={`${recipe.large ? 'col-span-12 lg:col-span-8' : 'col-span-12 md:col-span-6 lg:col-span-4'} group cursor-pointer`}
             >
-              <div className={`relative overflow-hidden ${recipe.large ? 'aspect-[16/9]' : 'aspect-square'} mb-6 bg-surface-container`}>
-                <img 
-                  src={IMAGES[recipe.imgKey as keyof typeof IMAGES]}
-                  alt={recipe.title} 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-                {recipe.signature && (
-                  <div className="absolute top-6 left-6">
-                    <span className="bg-white/90 backdrop-blur px-3 py-1 font-label-caps text-[10px] text-primary tracking-widest uppercase">{t.recipes.signature}</span>
+              <Link to={`/recipes/${recipe.id}`} className="block">
+                <div className={`relative overflow-hidden ${recipe.large ? 'aspect-[16/9]' : 'aspect-square'} mb-6 bg-surface-container`}>
+                  <img 
+                    src={IMAGES[recipe.imgKey as keyof typeof IMAGES]}
+                    alt={recipe.title} 
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  {recipe.signature && (
+                    <div className="absolute top-6 left-6">
+                      <span className="bg-white/90 backdrop-blur px-3 py-1 font-label-caps text-[10px] text-primary tracking-widest uppercase">{t.recipes.signature}</span>
+                    </div>
+                  )}
+                </div>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h2 className={`font-serif ${recipe.large ? 'text-3xl' : 'text-2xl'} mb-2 group-hover:text-primary transition-colors`}>{recipe.title}</h2>
+                    <p className="text-on-surface-variant/80 text-sm mb-4 max-w-md">{recipe.desc}</p>
+                    <div className="flex items-center gap-4 text-xs font-label-caps text-on-surface-variant/60">
+                      <span className="flex items-center gap-1"><Icon name="schedule" size={14} /> {recipe.time}</span>
+                      <span className="flex items-center gap-1"><Icon name="restaurant" size={14} /> {recipe.level}</span>
+                    </div>
                   </div>
-                )}
-              </div>
-              <div className="flex justify-between items-start">
-                <div>
-                  <h2 className={`font-serif ${recipe.large ? 'text-3xl' : 'text-2xl'} mb-2`}>{recipe.title}</h2>
-                  <p className="text-on-surface-variant/80 text-sm mb-4 max-w-md">{recipe.desc}</p>
-                  <div className="flex items-center gap-4 text-xs font-label-caps text-on-surface-variant/60">
-                    <span className="flex items-center gap-1"><Icon name="schedule" size={14} /> {recipe.time}</span>
-                    <span className="flex items-center gap-1"><Icon name="restaurant" size={14} /> {recipe.level}</span>
+                  <div className="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all shrink-0">
+                    <Icon name="arrow_outward" size={20} />
                   </div>
                 </div>
-                <button className="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all">
-                  <Icon name="arrow_outward" size={20} />
-                </button>
-              </div>
+              </Link>
             </motion.article>
           ))}
 
@@ -94,12 +97,13 @@ export default function Recipes() {
                 </div>
               ))}
             </div>
-            <button className="mt-12 bg-primary text-white px-10 py-4 font-label-caps hover:bg-primary-container transition-all flex items-center gap-2">
+            <Link to="/shop" className="mt-12 bg-primary text-white px-10 py-4 font-label-caps hover:bg-primary-container transition-all inline-flex items-center gap-2">
               {t.recipes.shopCta} <Icon name="shopping_bag" size={18} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+

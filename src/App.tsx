@@ -3,6 +3,7 @@ import Header, { Footer } from './components/Navigation';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Recipes from './pages/Recipes';
+import RecipeDetail from './pages/RecipeDetail';
 import Process from './pages/Process';
 import Shop from './pages/Shop';
 import { motion, AnimatePresence } from 'motion/react';
@@ -20,6 +21,11 @@ function AnimatedRoutes() {
         <Route path="/recipes" element={
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
             <Recipes />
+          </motion.div>
+        } />
+        <Route path="/recipes/:id" element={
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+            <RecipeDetail />
           </motion.div>
         } />
         <Route path="/process" element={

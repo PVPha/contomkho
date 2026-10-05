@@ -192,29 +192,304 @@ export const translations = {
       signature: "Signature Recipe",
       items: [
         {
+          id: "heritage-xo-sauce",
           title: "Heritage XO Sauce",
+          subtitle: "The ultimate coastal umami condiment, slow-cooked with premium Bạc Liêu sun-dried shrimp, scallops, and aromatics.",
           desc: "A decadent, savory condiment that serves as the ultimate umami bomb for noodles and stir-fries.",
           time: "90 MINS",
+          prepTime: "30 MINS",
+          cookTime: "60 MINS",
+          servings: "2 Jars (~500g)",
           level: "INTERMEDIATE",
           imgKey: "RECIPE_XO",
           signature: true,
           large: true,
+          ingredients: [
+            "150g Tôm Khô Năm Thuý (soaked in warm water for 20 mins)",
+            "100g Dried scallops (conpoy), soaked",
+            "100g Jinhua ham or quality cured ham, finely diced",
+            "6 cloves garlic, minced",
+            "4 shallots, finely diced",
+            "3 fresh red chillies & 2 tbsp dried chilli flakes",
+            "250ml vegetable oil or peanut oil",
+            "2 tbsp Shaoxing rice wine",
+            "2 tbsp light soy sauce",
+            "1 tbsp oyster sauce",
+            "1 tbsp brown sugar"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Prepare Dried Seafood",
+              text: "Soak Tôm Khô Năm Thuý in warm water for 20 minutes until slightly softened. Drain well (reserve soaking liquid for soups) and pulse in a food processor until finely shredded. Repeat for dried scallops."
+            },
+            {
+              step: 2,
+              title: "Crisp Aromatics",
+              text: "Heat 100ml oil in a heavy wok over medium-low heat. Fry minced garlic and shallots until golden brown and fragrant (5-7 minutes). Remove with a slotted spoon and set aside."
+            },
+            {
+              step: 3,
+              title: "Slow Fry Seafood & Ham",
+              text: "In the same infused oil with remaining oil added, simmer shredded sun-dried shrimp, scallops, and diced ham over low heat for 25-30 minutes, stirring constantly until crisp and deep golden brown."
+            },
+            {
+              step: 4,
+              title: "Season & Infuse",
+              text: "Add chilli flakes, fresh chillies, fried garlic, shallots, Shaoxing wine, soy sauce, oyster sauce, and sugar. Simmer together for another 10 minutes until oil turns deep translucent amber red."
+            },
+            {
+              step: 5,
+              title: "Cool & Bottle",
+              text: "Allow to cool completely before transferring to sterilized glass jars. Store submerged in oil in the refrigerator for up to 3 months."
+            }
+          ],
+          chefNote: "Slow frying on low heat is crucial; never rush with high heat or the dried shrimp will turn bitter instead of crisp."
         },
         {
-          title: "Bạc Liêu Shrimp Salad",
+          id: "bac-lieu-shrimp-salad",
+          title: "Heritage Shrimp Salad",
+          subtitle: "Crisp green papaya, mango, and herbs tossed with sun-cured shrimp in a vibrant calamansi-fish sauce dressing.",
           desc: "Crisp vegetables tossed with rehydrated heritage shrimp and a zesty calamansi dressing.",
           time: "20 MINS",
+          prepTime: "15 MINS",
+          cookTime: "5 MINS",
+          servings: "4 Servings",
           level: "EASY",
           imgKey: "RECIPE_SALAD",
+          ingredients: [
+            "100g Tôm Khô Năm Thuý",
+            "1 small green papaya or green mango, julienned",
+            "1 seedless cucumber, julienned",
+            "1 red bell pepper, thinly sliced",
+            "1/2 cup fresh mixed herbs (Vietnamese mint, Thai basil, mint)",
+            "1/4 cup crushed roasted peanuts",
+            "1 tbsp toasted sesame seeds",
+            "Dressing: 3 tbsp calamansi juice, 2 tbsp fish sauce, 2 tbsp sugar, 1 minced garlic, 1 minced chilli"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Rehydrate & Toast Shrimp",
+              text: "Soak Tôm Khô Năm Thuý in warm water for 15 minutes. Drain and pat dry. Heat a dry skillet over medium heat and lightly toast the shrimp for 2-3 minutes until fragrant and crisp on the surface."
+            },
+            {
+              step: 2,
+              title: "Crisp Vegetables",
+              text: "Julienne green papaya (or mango) and cucumber. Soak in ice water for 5 minutes for maximum crunch, then drain and spin dry."
+            },
+            {
+              step: 3,
+              title: "Whisk Dressing",
+              text: "Combine calamansi juice, fish sauce, sugar, minced garlic, and chilli in a bowl. Whisk until sugar dissolves completely."
+            },
+            {
+              step: 4,
+              title: "Toss & Serve",
+              text: "In a salad bowl, combine vegetables, herbs, and toasted Tôm Khô. Pour dressing right before serving, toss gently, and garnish with roasted peanuts and sesame seeds."
+            }
+          ],
+          chefNote: "Lightly toasting the rehydrated shrimp revives their sun-cured essential oils, releasing a rich coastal aroma."
         },
         {
+          id: "classic-claypot-braise",
           title: "Classic Claypot Braise",
+          subtitle: "Rich caramelized fish sauce reduction with crispy pork belly, whole sun-dried shrimp, and cracked black pepper.",
           desc: "Slow-cooked pork belly and dried shrimp in a caramelized fish sauce reduction.",
           time: "45 MINS",
+          prepTime: "15 MINS",
+          cookTime: "30 MINS",
+          servings: "3-4 Servings",
           level: "ADVANCED",
           imgKey: "RECIPE_CLAYPOT",
+          ingredients: [
+            "120g Tôm Khô Năm Thuý (soaked in warm water for 10 mins)",
+            "150g Pork belly, cut into small cubes",
+            "3 tbsp premium fish sauce",
+            "2.5 tbsp coconut nectar or caramel syrup",
+            "2 shallots & 3 garlic cloves, minced",
+            "2 whole fresh chillies & 1 tsp coarse cracked black pepper",
+            "2 green onions, chopped",
+            "Steamed coastal vegetables (okra, cabbage, bitter melon) for serving"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Render Pork Fat",
+              text: "Heat a claypot over medium heat. Fry pork belly cubes until fat renders and pork lardons become crispy and golden brown. Reserve half for garnish."
+            },
+            {
+              step: 2,
+              title: "Sauté Aromatics & Shrimp",
+              text: "In the rendered fat, sauté minced shallots and garlic until fragrant. Add drained Tôm Khô and toss for 2 minutes."
+            },
+            {
+              step: 3,
+              title: "Caramel Reduction",
+              text: "Add fish sauce, coconut nectar, and 50ml warm water. Reduce heat to low and simmer gently in the claypot for 15-20 minutes until the sauce thickens into a glossy amber glaze."
+            },
+            {
+              step: 4,
+              title: "Finish & Serve",
+              text: "Stir in cracked black pepper, fresh chillies, and green onions. Top with reserved crispy lardons and serve hot alongside fresh or steamed vegetables."
+            }
+          ],
+          chefNote: "Claypot cooking retains heat evenly, allowing the natural sugars in the fish sauce and shrimp to caramelize gently."
         },
+        {
+          id: "calabash-shrimp-soup",
+          title: "Calabash Gourd & Dried Shrimp Soup",
+          subtitle: "A soul-warming traditional coastal soup where sweet gourd balances the deep umami of sun-dried shrimp.",
+          desc: "A comforting traditional soup pairing sweet calabash gourd with rich sun-dried shrimp broth.",
+          time: "25 MINS",
+          prepTime: "10 MINS",
+          cookTime: "15 MINS",
+          servings: "4 Servings",
+          level: "EASY",
+          imgKey: "RECIPE_SOUP",
+          ingredients: [
+            "100g Tôm Khô Năm Thuý (soaked in warm water for 15 mins)",
+            "1 fresh calabash gourd (~500g), peeled and thinly sliced",
+            "3 cloves garlic, crushed",
+            "2 shallots, minced",
+            "2 tbsp fish sauce",
+            "1 tbsp vegetable oil",
+            "1 tsp fresh ground black pepper",
+            "2 sprigs scallion & cilantro, finely chopped",
+            "800ml water or light vegetable broth"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Sauté Aromatics & Shrimp",
+              text: "Heat oil in a pot over medium heat. Sauté crushed garlic and shallots until fragrant. Add rehydrated Tôm Khô and toss for 2 minutes until aromatic."
+            },
+            {
+              step: 2,
+              title: "Simmer Umami Broth",
+              text: "Pour in 800ml water (including reserved shrimp soaking liquid). Bring to a gentle boil, skimming any foam, and simmer for 8 minutes to draw out deep umami flavor."
+            },
+            {
+              step: 3,
+              title: "Add Calabash Gourd",
+              text: "Add sliced calabash gourd and fish sauce. Cook for 3-4 minutes until the gourd slices turn translucent yet retain a slight crisp bite."
+            },
+            {
+              step: 4,
+              title: "Finish & Serve",
+              text: "Remove from heat. Stir in fresh ground black pepper, chopped scallions, and cilantro. Serve piping hot with jasmine rice."
+            }
+          ],
+          chefNote: "Lightly bruising the rehydrated shrimp before sautéing releases concentrated natural juices into the golden broth."
+        },
+        {
+          id: "shrimp-pickled-scallions",
+          title: "Dried Shrimp with Pickled Scallions",
+          subtitle: "An iconic Vietnamese celebratory delicacy pairing chewy dried shrimp with sweet & sour pickled scallion bulbs and century eggs.",
+          desc: "An iconic Vietnamese holiday delicacy featuring sun-cured shrimp paired with sweet-and-sour pickled scallion bulbs.",
+          time: "15 MINS",
+          prepTime: "15 MINS",
+          cookTime: "0 MINS",
+          servings: "4 Servings",
+          level: "EASY",
+          imgKey: "RECIPE_KIEU",
+          ingredients: [
+            "150g Tôm Khô Năm Thuý (grade 1 large size)",
+            "150g Pickled scallion bulbs (củ kiệu chua ngọt)",
+            "2 century eggs (hột vịt bắc thảo), cooked and sliced",
+            "2 tbsp sweet chili fish sauce dressing",
+            "Fresh cilantro leaves for garnish"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Infuse Sun-Dried Shrimp",
+              text: "Rinse Tôm Khô Năm Thuý briefly in warm water, then soak in sweet-and-sour pickling juice from the củ kiệu jar for 15 minutes to infuse flavor and soften slightly."
+            },
+            {
+              step: 2,
+              title: "Slice Century Eggs",
+              text: "Peel century eggs and slice each egg into 4-6 neat wedges using a sharp knife or string."
+            },
+            {
+              step: 3,
+              title: "Assemble Heritage Platter",
+              text: "On a decorative vintage serving platter, arrange pickled scallion bulbs in a ring. Place rehydrated Tôm Khô proudly in the center and fan out sliced century eggs around the border."
+            },
+            {
+              step: 4,
+              title: "Drizzle & Serve",
+              text: "Drizzle with sweet chili fish sauce glaze and garnish with fresh cilantro. Serve as a traditional festive appetizer."
+            }
+          ],
+          chefNote: "Soaking the dried shrimp directly in pickled scallion syrup imparts a unique sweet-tangy chewiness."
+        },
+        {
+          id: "shrimp-fried-rice",
+          title: "Heritage Dried Shrimp Fried Rice",
+          subtitle: "Fragrant jasmine rice tossed with crispy dried shrimp, garlic, scallions, and salted egg yolk.",
+          desc: "Golden jasmine rice fried with crispy sun-dried shrimp, salted egg yolks, and fragrant garlic flakes.",
+          time: "30 MINS",
+          prepTime: "10 MINS",
+          cookTime: "20 MINS",
+          servings: "3-4 Servings",
+          level: "EASY",
+          imgKey: "RECIPE_FRIEDRICE",
+          ingredients: [
+            "120g Tôm Khô Năm Thuý (soaked for 10 mins and coarsely chopped)",
+            "4 cups chilled cooked jasmine rice (leftover overnight rice)",
+            "2 salted egg yolks, steamed and crumbled",
+            "2 Chinese sausages (lạp xưởng), diced",
+            "4 cloves garlic, minced & 2 shallots, minced",
+            "2 eggs, beaten",
+            "3 tbsp vegetable oil",
+            "1.5 tbsp soy sauce & 1 tsp fish sauce",
+            "Chopped scallions & cilantro for garnish"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Crisp Shrimp & Sausage",
+              text: "Heat 1 tbsp oil in a wok. Fry diced Chinese sausage and chopped Tôm Khô over medium heat for 4-5 minutes until crisp. Remove and set aside."
+            },
+            {
+              step: 2,
+              title: "Scramble Eggs",
+              text: "Add remaining oil, sauté garlic and shallots until golden. Pour in beaten eggs and scramble gently."
+            },
+            {
+              step: 3,
+              title: "Fry Rice",
+              text: "Add chilled jasmine rice, breaking up clumps. Stir-fry on high heat for 5 minutes. Add crumbled salted egg yolks, soy sauce, and fish sauce."
+            },
+            {
+              step: 4,
+              title: "Combine & Serve",
+              text: "Toss back the crispy Tôm Khô and Chinese sausage. Stir constantly until rice grains dance in the wok. Finish with scallions and serve hot."
+            }
+          ],
+          chefNote: "Using chilled overnight rice ensures every grain separates and absorbs the rich umami oil from the dried shrimp."
+        }
       ],
+      detail: {
+        backToRecipes: "Back to Recipes",
+        ingredients: "Ingredients Required",
+        instructions: "Preparation Steps",
+        servingsLabel: "Base Servings",
+        prepTimeLabel: "Prep Time",
+        cookTimeLabel: "Cook Time",
+        totalTimeLabel: "Total Time",
+        levelLabel: "Difficulty",
+        chefTipTitle: "Master Artisan Note",
+        itemsChecked: "prepped",
+        interactiveServings: "Adjust Servings",
+        relatedTitle: "More Heritage Recipes",
+        shopCtaTitle: "Elevate this dish with genuine sun-dried shrimp",
+        shopCtaButton: "Shop Tôm Khô Năm Thuý",
+        printRecipe: "Print Recipe",
+        shareRecipe: "Share Recipe",
+        copied: "Link Copied to Clipboard!"
+      },
       quote:
         "The sun-dried shrimp isn't just an ingredient; it is the seasoning that defines the soul of the dish.",
       processAlt: "Drying process",
@@ -470,29 +745,304 @@ export const translations = {
       signature: "Công thức đặc trưng",
       items: [
         {
+          id: "heritage-xo-sauce",
           title: "Sốt XO Heritage",
+          subtitle: "Sốt gia vị đậm đà sang vị, nấu chậm từ Tôm Khô Năm Thuý phơi nắng, sò điệp và thảo mộc.",
           desc: "Gia vị đậm đà, sang vị, là nền umami lý tưởng cho mì và các món xào.",
           time: "90 PHÚT",
+          prepTime: "30 PHÚT",
+          cookTime: "60 PHÚT",
+          servings: "2 Hũ (~500g)",
           level: "TRUNG BÌNH",
           imgKey: "RECIPE_XO",
           signature: true,
           large: true,
+          ingredients: [
+            "150g Tôm Khô Năm Thuý (ngâm nước ấm 20 phút)",
+            "100g Sò điệp khô (sò điệp Nhật/Việt), ngâm mềm",
+            "100g Đùi heo muối Jinhua hoặc thịt xông khói, xắt hạt lựu nhỏ",
+            "6 tép tỏi, băm nhỏ",
+            "4 củ hành tím, băm nhỏ",
+            "3 trái ớt tươi & 2 muỗng ớt bột",
+            "250ml dầu ăn hoặc dầu đậu phộng",
+            "2 muỗng rượu Thiệu Hưng (Shaoxing)",
+            "2 muỗng nước tương thanh",
+            "1 muỗng dầu hào",
+            "1 muỗng đường nâu"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Sơ chế hải sản khô",
+              text: "Ngâm Tôm Khô Năm Thuý trong nước ấm 20 phút cho hơi mềm. Vớt ra ráo nước (giữ lại nước ngâm nấu canh) rồi cho vào máy xay nhấp nhả cho tơi sợi. Làm tương tự với sò điệp khô."
+            },
+            {
+              step: 2,
+              title: "Phi thơm hành tỏi",
+              text: "Đun nóng 100ml dầu trong chảo sâu lòng với lửa vừa-nhỏ. Cho hành tím và tỏi băm vào phi vàng giòn thơm (5-7 phút). Vớt ra để riêng."
+            },
+            {
+              step: 3,
+              title: "Chiên chậm tôm & hải sản",
+              text: "Cho thêm lượng dầu còn lại vào chảo. Cho tôm khô tơi sợi, sò điệp và thịt muối xắt nhỏ vào đảo liên tục trên lửa nhỏ 25-30 phút đến khi giòn rụm và ngả màu vàng đậm."
+            },
+            {
+              step: 4,
+              title: "Hòa vị & lên màu",
+              text: "Thêm ớt bột, ớt tươi, hành tỏi đã phi, rượu, nước tương, dầu hào và đường. Đun rim lửa nhỏ thêm 10 phút đến khi dầu chuyển màu đỏ hổ phách sẫm trong suốt."
+            },
+            {
+              step: 5,
+              title: "Để nguội & đóng hũ",
+              text: "Để sốt nguội hoàn toàn trước khi cho vào hũ thủy tinh đã tiệt trùng. Rót dầu ngập mặt sốt và bảo quản tủ lạnh dùng trong 3 tháng."
+            }
+          ],
+          chefNote: "Chiên trên lửa nhỏ là chìa khóa vàng; không bao giờ dùng lửa lớn khiến tôm bị đắng."
         },
         {
-          title: "Gỏi tôm khô Bạc Liêu",
+          id: "bac-lieu-shrimp-salad",
+          title: "Gỏi tôm khô",
+          subtitle: "Đu đủ, xoài xanh giòn sần sật trộn tôm khô phơi nắng đậm đà cùng sốt tắc chua ngọt thanh mát.",
           desc: "Rau giòn trộn cùng Tôm Khô Năm Thuý đã ngâm mềm và nước sốt tắc tươi sáng.",
           time: "20 PHÚT",
+          prepTime: "15 PHÚT",
+          cookTime: "5 PHÚT",
+          servings: "4 Phần",
           level: "DỄ",
           imgKey: "RECIPE_SALAD",
+          ingredients: [
+            "100g Tôm Khô Năm Thuý",
+            "1 trái đu đủ xanh hoặc xoài xanh, bào sợi",
+            "1 trái dưa leo bỏ ruột, bào sợi",
+            "1/2 trái ớt chuông đỏ, thái mỏng",
+            "1/2 chén rau thơm hỗn hợp (rau răm, húng lủi, húng quế)",
+            "1/4 chén đậu phụng rang giã dập",
+            "1 muỗng mè rang",
+            "Nước sốt: 3 muỗng nước tắc/chanh, 2 muỗng nước mắm ngon, 2 muỗng đường, 1 tép tỏi băm, 1 trái ớt băm"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Ngâm & rang sơ tôm",
+              text: "Ngâm Tôm Khô Năm Thuý vào nước ấm 15 phút, vớt ra thấm khô. Cho lên chảo khô đảo nhẹ trên lửa vừa 2-3 phút cho tôm dậy mùi thơm và săn giòn bề mặt."
+            },
+            {
+              step: 2,
+              title: "Chuẩn bị rau củ giòn",
+              text: "Bào sợi đu đủ/xoài và dưa leo. Ngâm vào tô nước đá 5 phút để tạo độ giòn tối đa, sau đó vớt ra vắt ráo."
+            },
+            {
+              step: 3,
+              title: "Pha nước sốt gỏi",
+              text: "Hòa tan nước tắc, nước mắm, đường, tỏi băm và ớt băm trong chén cho đường tan hoàn toàn."
+            },
+            {
+              step: 4,
+              title: "Trộn & thưởng thức",
+              text: "Trong tô lớn, trộn đều rau củ, rau thơm và Tôm Khô. Rưới nước sốt ngay trước khi ăn, trộn nhẹ tay và rắc đậu phụng, mè rang lên trên."
+            }
+          ],
+          chefNote: "Rang sơ tôm khô sau khi ngâm giúp kích hoạt lớp dầu phơi nắng tự nhiên, giải phóng hương vị biển nồng nàn."
         },
         {
-          title: "Kho niêu truyền thống",
+          id: "classic-claypot-braise",
+          title: "Kho niêu truyền thống (Kho quẹt)",
+          subtitle: "Nước mắm thắng đường thốt nốt kẹo sệt quánh cùng ba chỉ giòn rụm, tôm khô nguyên con và tiêu đen ớt hiểm.",
           desc: "Thịt ba chỉ và tôm khô nấu chậm trong nước mắm thắng màu đậm đà.",
           time: "45 PHÚT",
+          prepTime: "15 PHÚT",
+          cookTime: "30 PHÚT",
+          servings: "3-4 Phần",
           level: "NÂNG CAO",
           imgKey: "RECIPE_CLAYPOT",
+          ingredients: [
+            "120g Tôm Khô Năm Thuý (ngâm nước ấm 10 phút)",
+            "150g Thịt ba chỉ xắt hạt lựu/top mỡ",
+            "3 muỗng nước mắm ngon Bạc Liêu/Phú Quốc",
+            "2.5 muỗng mật hoa dừa hoặc nước màu đường thốt nốt",
+            "2 củ hành tím & 3 tép tỏi băm",
+            "2 trái ớt hiểm nguyên trái & 1 muỗng tiêu đập dập",
+            "2 nhánh hành lá xắt nhỏ",
+            "Rau luộc (đậu bắp, cải luộc, khổ qua) ăn kèm"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Rán tép mỡ ba chỉ",
+              text: "Cho thịt ba chỉ xắt nhỏ vào nồi đất rán lửa vừa cho ra bớt mỡ, miếng thịt giòn rụm chuyển màu vàng ươm. Vớt một nửa tép mỡ ra để riêng trang trí."
+            },
+            {
+              step: 2,
+              title: "Phi hành tỏi & tôm khô",
+              text: "Dùng mỡ heo trong nồi, phi thơm hành tím và tỏi băm. Cho Tôm Khô Năm Thuý đã ráo nước vào đảo đều 2 phút."
+            },
+            {
+              step: 3,
+              title: "Sắc kẹo nước kho",
+              text: "Cho nước mắm, nước màu thốt nốt và 50ml nước ấm vào nồi. Hạ lửa nhỏ riu riu đun 15-20 phút cho nước mắm kẹo quánh lại, màu hổ phách óng ánh."
+            },
+            {
+              step: 4,
+              title: "Hoàn thiện & thưởng thức",
+              text: "Cho tiêu đập dập, ớt hiểm và hành lá vào. Trút phần tép mỡ giòn lên trên. Dùng nóng ngay trong nồi đất cùng cơm cháy hoặc rau củ luộc."
+            }
+          ],
+          chefNote: "Nấu bằng nồi đất giữ nhiệt êm dịu, giúp vị ngọt của tôm khô và nước mắm thốt nốt kẹo lại mà không bị cháy khét."
         },
+        {
+          id: "calabash-shrimp-soup",
+          title: "Canh bầu nấu tôm khô",
+          subtitle: "Món canh ngọt mát đậm đà vị biển, sự kết hợp hoàn hảo giữa bầu thanh ngọt và tôm khô phơi nắng.",
+          desc: "Món canh truyền thống thanh nhiệt, hòa quyện giữa bầu ngọt thanh và nước dùng tôm khô phơi nắng nồng nàn.",
+          time: "25 PHÚT",
+          prepTime: "10 PHÚT",
+          cookTime: "15 PHÚT",
+          servings: "4 Phần",
+          level: "DỄ",
+          imgKey: "RECIPE_SOUP",
+          ingredients: [
+            "100g Tôm Khô Năm Thuý (ngâm nước ấm 15 phút)",
+            "1 trái bầu tươi (~500g), gọt vỏ, băm hoặc thái mỏng",
+            "3 tép tỏi đập dập",
+            "2 củ hành tím băm nhỏ",
+            "2 muỗng nước mắm ngon Bạc Liêu",
+            "1 muỗng dầu ăn",
+            "1 muỗng tiêu xay tươi",
+            "Hành lá, ngò rí xắt nhỏ",
+            "800ml nước lọc (giữ lại nước ngâm tôm)"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Phi thơm tôm khô",
+              text: "Đun nóng dầu trong nồi. Cho tỏi và hành tím vào phi thơm. Cho Tôm Khô Năm Thuý đã ngâm mềm vào xào săn 2 phút cho dậy mùi thơm."
+            },
+            {
+              step: 2,
+              title: "Nấu nước dùng umami",
+              text: "Trút 800ml nước (bao gồm cả nước ngâm tôm) vào nồi. Đun sôi nhẹ, hớt bọt và đun riu riu 8 phút để vị ngọt tự nhiên của tôm hòa vào nước dùng."
+            },
+            {
+              step: 3,
+              title: "Nấu bầu thanh ngọt",
+              text: "Cho bầu thái mỏng và nước mắm vào. Nấu khoảng 3-4 phút cho bầu vừa chuyển màu trong suốt nhưng vẫn giữ được độ ngọt giòn."
+            },
+            {
+              step: 4,
+              title: "Hoàn thiện & thưởng thức",
+              text: "Tắt bếp, rắc tiêu xay, hành lá và ngò rí lên trên. Dùng nóng cùng cơm trắng."
+            }
+          ],
+          chefNote: "Đập dập nhẹ con tôm khô trước khi xào giúp tiết trọn vẹn vị umami tự nhiên vào nước canh."
+        },
+        {
+          id: "shrimp-pickled-scallions",
+          title: "Tôm khô củ kiệu",
+          subtitle: "Món nhắm di sản không thể thiếu trong ngày lễ Tết, hòa quyện giữa tôm khô dẻo ngọt và củ kiệu chua ngọt giòn tan.",
+          desc: "Món ngon di sản ngày Tết, kết hợp tôm khô phơi nắng dẻo thơm với củ kiệu chua ngọt và trứng bắc thảo ngậy bùi.",
+          time: "15 PHÚT",
+          prepTime: "15 PHÚT",
+          cookTime: "0 PHÚT",
+          servings: "4 Phần",
+          level: "DỄ",
+          imgKey: "RECIPE_KIEU",
+          ingredients: [
+            "150g Tôm Khô Năm Thuý (loại 1 cỡ lớn)",
+            "150g Củ kiệu chua ngọt giòn",
+            "2 quả trứng vịt bắc thảo, luộc chín thái múi cau",
+            "2 muỗng nước mắm ớt đường kẹo",
+            "Ngò rí trang trí"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Ủ tôm khô thấm vị",
+              text: "Rửa sơ Tôm Khô Năm Thuý qua nước ấm, sau đó ngâm tôm trực tiếp vào nước giấm đường của củ kiệu 15 phút cho tôm nở dẻo và ngấm vị chua ngọt."
+            },
+            {
+              step: 2,
+              title: "Cắt trứng bắc thảo",
+              text: "Bóc vỏ trứng bắc thảo, dùng chỉ hoặc dao sắc cắt thành các múi cau đều nhau."
+            },
+            {
+              step: 3,
+              title: "Bày đĩa di sản",
+              text: "Trên đĩa gốm mộc, xếp củ kiệu chua ngọt xung quanh. Trút Tôm Khô Năm Thuý dẻo ngọt vào giữa đĩa, xếp trứng bắc thảo vòng ngoài."
+            },
+            {
+              step: 4,
+              title: "Rưới sốt & thưởng thức",
+              text: "Rưới nhẹ nước mắm ớt kẹo ngọt và trang trí ngò rí. Món ăn hoàn hảo cho các dịp sum họp gia đình."
+            }
+          ],
+          chefNote: "Ngâm tôm khô trong nước kiệu là bí quyết giúp con tôm vừa dẻo mềm vừa ngấm vị chua ngọt tự nhiên."
+        },
+        {
+          id: "shrimp-fried-rice",
+          title: "Cơm chiên tôm khô",
+          subtitle: "Cơm chiên giòn thơm lừng với tôm khô đảo giòn, trứng muối tơi bùi và hành phi thơm phức.",
+          desc: "Cơm chiên hạt vàng ươm giòn rụm với tôm khô phơi nắng xào giòn, lòng đỏ trứng muối bùi béo.",
+          time: "30 PHÚT",
+          prepTime: "10 PHÚT",
+          cookTime: "20 PHÚT",
+          servings: "3-4 Phần",
+          level: "DỄ",
+          imgKey: "RECIPE_FRIEDRICE",
+          ingredients: [
+            "120g Tôm Khô Năm Thuý (ngâm 10 phút, giã nhẹ hoặc xắt hạt lựu)",
+            "4 chén cơm nguội hạt xốp (để tủ lạnh qua đêm)",
+            "2 lòng đỏ trứng muối, hấp chín giã dập",
+            "2 cây lạp xưởng Mai Quế Lộ, xắt hạt lựu",
+            "4 tép tỏi băm & 2 củ hành tím băm",
+            "2 quả trứng gà đánh tan",
+            "3 muỗng dầu ăn",
+            "1.5 muỗng nước tương & 1 muỗng nước mắm ngon",
+            "Hành lá, ngò rí, tiêu xay"
+          ],
+          instructions: [
+            {
+              step: 1,
+              title: "Đảo giòn tôm & lạp xưởng",
+              text: "Đun nóng 1 muỗng dầu trong chảo. Cho lạp xưởng và Tôm Khô Năm Thuý vào đảo trên lửa vừa 4-5 phút đến khi vàng giòn. Trút ra bát riêng."
+            },
+            {
+              step: 2,
+              title: "Phi thơm & chiên trứng",
+              text: "Thêm dầu vào chảo, phi thơm tỏi hành băm. Rưới trứng gà đánh tan vào đảo nhanh tay cho trứng tơi nhỏ."
+            },
+            {
+              step: 3,
+              title: "Chiên cơm tơi hạt",
+              text: "Cho cơm nguội vào tơi đều trên lửa lớn 5 phút. Cho lòng đỏ trứng muối giã dập, nước tương và nước mắm vào đảo cho cơm nhuộm màu vàng óng."
+            },
+            {
+              step: 4,
+              title: "Hòa vị & trình bày",
+              text: "Trút tôm khô và lạp xưởng giòn trở lại chảo. Đảo đều tay trên lửa lớn cho hạt cơm săn lại. Rắc hành lá, tiêu xay và dùng nóng."
+            }
+          ],
+          chefNote: "Dùng cơm nguội để tủ lạnh giúp hạt cơm săn giòn, thấm trọn vẹn lớp dầu tôm khô béo thơm."
+        }
       ],
+      detail: {
+        backToRecipes: "Quay lại danh sách công thức",
+        ingredients: "Nguyên liệu cần chuẩn bị",
+        instructions: "Các bước thực hiện",
+        servingsLabel: "Khẩu phần chuẩn",
+        prepTimeLabel: "Chuẩn bị",
+        cookTimeLabel: "Chế biến",
+        totalTimeLabel: "Tổng thời gian",
+        levelLabel: "Độ khó",
+        chefTipTitle: "Ghi chú từ nghệ nhân",
+        itemsChecked: "đã chuẩn bị",
+        interactiveServings: "Điều chỉnh khẩu phần",
+        relatedTitle: "Công thức di sản khác",
+        shopCtaTitle: "Nâng tầm món ăn với Tôm Khô Năm Thuý phơi nắng nguyên chất",
+        shopCtaButton: "Đặt mua Tôm Khô Năm Thuý",
+        printRecipe: "In công thức",
+        shareRecipe: "Chia sẻ công thức",
+        copied: "Đã chép liên kết vào bộ nhớ tạm!"
+      },
       quote:
         "Tôm khô phơi nắng không chỉ là nguyên liệu; đó là gia vị định hình linh hồn món ăn.",
       processAlt: "Quy trình phơi",
